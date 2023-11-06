@@ -11,6 +11,6 @@ target_link_libraries(
     AML   
 )
 
-instal(TARGETS ${PROJECT_NAME}
+install(TARGETS ${PROJECT_NAME}
     DESTINATION ${CMAKE_BINARY_DIR}/bin
 )
