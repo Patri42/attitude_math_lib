@@ -7,6 +7,7 @@ set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wall -Werror  -std=c++11")
 set(SRC_CPP_AML
     AMLVector3.cpp
     AMLMatrix33.cpp
+    AMLDCM.cpp
 )
 
 add_library(

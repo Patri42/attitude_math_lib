@@ -3,5 +3,6 @@
 
 #include "AMLVector3.h"
 #include "AMLMatrix33.h"
+#include "AMLDCM.h"
 
 #endif //AML_H
