@@ -87,8 +87,8 @@ namespace AML
     Matrix33 dcmKinematicRates_BodyRates (const Matrix33& dcm, const Vector3& bodyRates)
     {
         const double p = bodyRates.x;
-        const double p = bodyRates.y;
-        const double p = bodyRates.z;
+        const double q = bodyRates.y;
+        const double r = bodyRates.z;
 
         const double skewMatrixData[9] = {0.0, -r, q, r, 0.0, -p, -q, p, 0.0};
         const Matrix33 skewMatrix = Matrix33 (skewMatrixData);
@@ -98,8 +98,8 @@ namespace AML
     Matrix33 dcmKinematicRates_WorldRates (const Matrix33& dcm, const Vector3& worldRates)
     {
         const double p = worldRates.x;
-        const double p = worldRates.y;
-        const double p = worldRates.z;
+        const double q = worldRates.y;
+        const double r = worldRates.z;
 
         const double skewMatrixData[9] = {0.0, -r, q, r, 0.0, -p, -q, p, 0.0};
         const Matrix33 skewMatrix = Matrix33 (skewMatrixData);
